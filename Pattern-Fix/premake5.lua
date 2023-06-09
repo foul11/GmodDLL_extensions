@@ -17,9 +17,10 @@ local gmcommon = assert(_OPTIONS.gmcommon or os.getenv("GARRYSMOD_COMMON"),
 include(gmcommon)
 
 CreateWorkspace({
-    name = "Pattern_Fix",
+    name = "Pattern_Fix", -- Not use '-' otherwise print error 'invalid macro definition'
 })
-
+	cppdialect 'C++17'
+	
 	CreateProject({
 		serverside = false,
 		source_path = "./src" -- optional

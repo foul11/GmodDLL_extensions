@@ -79,7 +79,7 @@ typedef struct MatchState {
         int ref_callback;
         bool limited;
         std::chrono::nanoseconds timeLimit;
-        std::chrono::steady_clock::time_point startPoint;
+        std::chrono::high_resolution_clock::time_point startPoint;
     } hook;
 } MatchState;
 
